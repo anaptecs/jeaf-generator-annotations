@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent POM contains all general settings for building and releasing of all JEAF projects. -->
+	<parent>
+		<groupId>com.anaptecs.jeaf</groupId>
+		<artifactId>jeaf-module-project-parent</artifactId>
+		<version>1.10.0</version>
+	</parent>
+
+	<groupId>com.anaptecs.jeaf.generator</groupId>
+	<artifactId>jeaf-generator-annotations</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>JEAF Generator Annotations</name>
+	<description>Project defines annotations that are used by JEAF Generator in the generated code.</description>
+	<url>https://www.jeaf-generator.io</url>
+
+	<scm>
+		<connection>scm:git:https://github.com/anaptecs/jeaf-generator-annotations.git</connection>
+		<developerConnection>scm:git:https://github.com/anaptecs/jeaf-generator-annotations.git</developerConnection>
+		<url>https://github.com/anaptecs/jeaf-generator-annotations</url>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<distributionManagement>
+		<snapshotRepository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/anaptecs/jeaf-generator-annotations</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
