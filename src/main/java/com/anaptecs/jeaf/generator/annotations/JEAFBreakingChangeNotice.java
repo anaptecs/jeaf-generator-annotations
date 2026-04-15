@@ -14,11 +14,6 @@ import java.lang.annotation.Retention;
 @Retention(RUNTIME)
 public @interface JEAFBreakingChangeNotice {
   /**
-   * Type of the planned change
-   */
-  ChangeType changeType() default ChangeType.UNDEFINED;
-
-  /**
    * Description of an upcoming breaking change.
    */
   String description() default "";
@@ -38,5 +33,12 @@ public @interface JEAFBreakingChangeNotice {
    * </ul>
    */
   String activeWith() default "";
+
+  /**
+   * Explicit date when the breaking change will be activated.
+   *
+   * The expected date format is `yyyy-mm-dd`.
+   */
+  String activationDate() default "";
 
 }

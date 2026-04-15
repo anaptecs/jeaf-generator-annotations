@@ -16,11 +16,11 @@ import java.lang.annotation.Retention;
  */
 @Documented
 @Retention(RUNTIME)
-public @interface JEAFUnderConstructionNotice {
+public @interface ToDo {
   /**
    * Changes that are planned for an element.
    */
-  ChangeType[] plannedChanges() default ChangeType.UNDEFINED;
+  ToDoType[] plannedChanges() default ToDoType.UNDEFINED;
 
   /**
    * Detailed description what of the element is under construction and is supposed to be changed in the future.

@@ -28,4 +28,11 @@ public @interface JEAFDeprecationNotice {
    * Information when a deprecated element will no longer be available e.g. a version or date.
    */
   String removedWith() default "";
+
+  /**
+   * Explicit date when the deprecation will be removed from the code base.
+   *
+   * The expected date format is `yyyy-mm-dd`.
+   */
+  String removalDate() default "";
 }
