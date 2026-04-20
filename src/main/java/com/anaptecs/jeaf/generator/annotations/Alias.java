@@ -6,7 +6,8 @@ import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 
 /**
- * Annotation can be used to add an alias to the code. This alias is just there for documentation purpose.
+ * Annotation can be used to add an alias information (alternate names for an element) to the code. This alias is just
+ * there for documentation purpose.
  *
  * @author JEAF Development Team
  */
@@ -14,7 +15,7 @@ import java.lang.annotation.Retention;
 @Retention(RUNTIME)
 public @interface Alias {
   /**
-   * Alias value for an element.
+   * Alternate names for an element.
    */
-  String value() default "";
+  String[] alternateNames() default {};
 }

@@ -16,5 +16,5 @@ public @interface Example {
   /**
    * Example values for an element.
    */
-  String[] value() default {};
+  String[] values() default {};
 }

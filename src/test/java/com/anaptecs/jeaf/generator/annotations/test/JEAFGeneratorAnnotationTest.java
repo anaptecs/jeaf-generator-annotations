@@ -9,8 +9,8 @@ import com.anaptecs.jeaf.generator.annotations.ToDoType;
 public class JEAFGeneratorAnnotationTest {
 
   @ToDo(plannedChanges = ToDoType.CHANGE_ELEMENT_TO_MANDATORY)
-  @Alias("theMagicName")
-  @Example({ "Jolly Jumper", "Lucky Luke" })
+  @Alias(alternateNames = { "theMagicName", "My Former Name" })
+  @Example(values = { "Jolly Jumper", "Lucky Luke" })
   private String myName;
 
   @ToDo(
