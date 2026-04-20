@@ -12,7 +12,7 @@ import java.lang.annotation.Retention;
  */
 @Documented
 @Retention(RUNTIME)
-public @interface JEAFBreakingChangeNotice {
+public @interface BreakingChangeNotice {
   /**
    * Description of an upcoming breaking change.
    */

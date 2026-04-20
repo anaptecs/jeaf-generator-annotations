@@ -13,7 +13,7 @@ import java.lang.annotation.Retention;
  */
 @Documented
 @Retention(RUNTIME)
-public @interface JEAFDeprecationNotice {
+public @interface DeprecationNotice {
   /**
    * Description of the deprecation and what might be an alternative that should be used instead.
    */
