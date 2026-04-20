@@ -2,7 +2,7 @@
 
 
 
-# JEAF Generator Annotations README #
+# JEAF Generator Annotations
 
 This repository contains annotations that are used by JEAF Generator in the generated code. Purpose of all annotations is just for documentation.
 
