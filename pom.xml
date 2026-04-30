@@ -11,7 +11,7 @@
 
 	<groupId>com.anaptecs.jeaf.generator</groupId>
 	<artifactId>jeaf-generator-annotations</artifactId>
-	<version>1.0.0-RC1</version>
+	<version>1.0.0-RC2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>JEAF Generator Annotations</name>
 	<description>Project defines annotations that are used by JEAF Generator in the generated code.</description>
@@ -21,7 +21,7 @@
 		<connection>scm:git:https://github.com/anaptecs/jeaf-generator-annotations.git</connection>
 		<developerConnection>scm:git:https://github.com/anaptecs/jeaf-generator-annotations.git</developerConnection>
 		<url>https://github.com/anaptecs/jeaf-generator-annotations</url>
-		<tag>v1.0.0-RC1</tag>
+		<tag>HEAD</tag>
 	</scm>
 	
 	<distributionManagement>
