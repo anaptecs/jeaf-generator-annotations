@@ -82,6 +82,11 @@ public enum ToDoType {
   NOT_YET_IMPLEMENTED,
 
   /**
+   * Element is not yet supported.
+   */
+  NOT_YET_SUPPORTED,
+
+  /**
    * Documentation should be updated.
    */
   UPDATE_DOCUMENTATION,
