@@ -44,7 +44,8 @@ public @interface BreakingChangeNotice {
    * The date on which the breaking change becomes effective in production environments.<br/>
    * <br/>
    * A go-live date does not necessarily mean that existing clients will stop working immediately. Depending on the
-   * release policy, a transition or compatibility period may be provided (see {@link #endOfCompatibilityPhase()}).<br/>
+   * release policy, a transition or compatibility period may be provided (see
+   * {@link #endOfCompatibilityPeriod()}).<br/>
    * <br/>
    * The expected date format is <strong><code>yyyy-mm-dd</code></strong>.<br/>
    * <br/>
@@ -57,9 +58,9 @@ public @interface BreakingChangeNotice {
   String goLiveDate() default "";
 
   /**
-   * The date on which the compatibility phase for a breaking change ends in production environments.<br/>
+   * The date on which the compatibility period for a breaking change ends in production environments.<br/>
    * <br/>
-   * Consumers must have adapted their code by this date to avoid compatibility issues once the compatibility phase has
+   * Consumers must have adapted their code by this date to avoid compatibility issues once the compatibility period has
    * ended.<br/>
    * <br/>
    * The expected date format is <strong><code>yyyy-mm-dd</code></strong>. <br/>
@@ -69,5 +70,5 @@ public @interface BreakingChangeNotice {
    * <li>Taken from <code>endOfLifeDate</code> from compatibility info
    * </ul>
    */
-  String endOfCompatibilityPhase() default "";
+  String endOfCompatibilityPeriod() default "";
 }
